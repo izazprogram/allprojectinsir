@@ -1,5 +1,10 @@
 import 'package:flutter/material.dart';
 
+import 'Column&Row.dart';
+import 'TextSystem.dart';
+
+
+
 void main()
 {
   runApp(Izazul());
@@ -11,25 +16,13 @@ class Izazul extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-       home: SafeArea(child:
-       Scaffold(
-         body: Center(
-           child: Container(
-             child: Center(
-               child: Text('This is container',style: TextStyle(
-                 fontSize: 34,
-                 color: Colors.white,
-                 fontWeight: FontWeight.bold
-               ),),
-             ),
-             color: Colors.blueAccent,
-             height: 200,
-           ),
-           
-         ),
-
-       ),
-
-    ));
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text('All Project Program'),
+          ),
+      body: RowColumn(),
+      ),
+    );
   }
+
 }
