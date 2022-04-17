@@ -23,6 +23,7 @@ class _PageSystemState extends State<PageSystem> {
           title: Text("PageSystem"),
         ),
         body: PageView(
+          //scrollDirection: Axis.vertical,
           controller: _controller,
           children: [
            Page1(),

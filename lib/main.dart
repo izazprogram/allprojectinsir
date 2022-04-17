@@ -24,7 +24,7 @@ class Izazul extends StatelessWidget {
       home: Scaffold(
 
 
-      body: PageSystem(),
+      body: SwipeLiquit(),
       ),
     );
   }
