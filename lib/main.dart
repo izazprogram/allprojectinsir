@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'Column&Row.dart';
 import 'GridList.dart';
 import 'ListSystem.dart';
+import 'MyExpanded.dart';
+import 'Pageses.dart';
 import 'TextSystem.dart';
 import 'liquitSwipe.dart';
 
@@ -20,10 +22,9 @@ class Izazul extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-          appBar: AppBar(
-            title: Text('All Project Program'),
-          ),
-      body: MyGridview(),
+
+
+      body: PageSystem(),
       ),
     );
   }
